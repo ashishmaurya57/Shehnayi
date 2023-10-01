@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Partner Profile</title>
+
+    <!-- Title icon -->
+    <link rel="icon" type="image/icon" href="./icons/title-icon.png">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="partner_profile.css">
+
+    <!-- Remixicon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>  
+
+    <!-- Mobileview navbar-->
+    <div id="mobileview">
+        <i class="ri-close-line">
+        </i>
+        <div id="nav-elements">
+            <a href="index.html">HOME</a>
+            <a href="aboutUs.html">ABOUT US</a> 
+            <a href="membership-plan.html">MEMBERSHIP</a> 
+            <a href="#">LOGIN</a>
+            <a id="mobile-register" href="#">REGISTER</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="profile-navbar">
+        <div class="navbar">
+            <ul>
+                <li class="logo-item"><a href="index.html" class="logo"><img src="./icons/logo-icon.svg" alt=""></a></li>
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="match.html" class="nav-item">Matches</a></li>
+                <li><a href="userprofile.html" class="nav-item">Profile</a></li>
+                <li><a href="notification.html" class="nav-item">Notification</a></li>
+                <li><a href="membership.html" class="nav-item">Membership</a></li>
+                <li><a href="#" class="nav-item">Help</a></li>
+                <li class="search-item"><a href="#" class="nav-item">Search</a></li>
+            </ul>
+        </div>
+        <div class="setting">
+            <i class="ri-settings-4-line" id="setting" onClick="rotateIcon()"></i>
+        </div>
+    </nav>
+
+    <!-- Setting content -->
+    <div class="setting-div" id="setting-div">
+        <div class="setting-item">
+            <a href="#">Notification</a>
+        </div>
+        <div class="setting-item">
+            <a href="#">Privacy</a>
+        </div>
+        <div class="setting-item">
+            <a href="#">Security</a>
+        </div>
+        <div class="setting-item">
+            <a href="#">Account</a>
+        </div>
+        <div class="setting-item">
+            <a href="#">About</a>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="img-right">
+            <img src="./images/partner-profile-side-img2.png" alt="">
+        </div>
+        <div class="profile-data-div">
+            <div class="profile-img">
+                <img src="./images/partner-img1.jpg" alt="Profile Image">
+            </div>
+            <div class="profile-data">
+                <h2>Pooja</h2>
+                <h3>Software Developer</h3>
+                <table>
+                    <tbody class="table-body">
+                        <tr class="row">
+                            <td class="label">Name:</td>
+                            <td class="desc">Pooja</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="label">Birthdate:</td>
+                            <td class="desc">01/01/2001 (21 Years)</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="label">Height:</td>
+                            <td class="desc">5ft 10in</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="label">Weight:</td>
+                            <td class="desc">69 Kg</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="label">Marital Status:</td>
+                            <td class="desc">UnMarried</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="label">Mother Tongue:</td>
+                            <td class="desc">Sindhi</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="label">Languages Known:</td>
+                            <td class="desc">Hindi</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="img-left">
+            <img src="./images/partner-profile-side-img1.png" alt="">
+        </div>
+    </div>
+
+    <!-- Script file -->
+    <script src='partner_profile.js'></script>
+</body>
+</html>

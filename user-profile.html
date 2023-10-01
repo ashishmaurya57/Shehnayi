@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Mobileview navbar-->
+    <div id="mobileview">
+        <i class="ri-close-line">
+        </i>
+        <div id="nav-elements">
+            <a href="index.html" class="m-nav-item">HOME</a>
+            <a href="#" class="m-nav-item">MATCHES</a> 
+            <a href="user-profile.html" class="m-nav-item">PROFILE</a>
+            <a href="#" class="m-nav-item">NOTIFICATION</a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="profile-navbar">
+        <div class="navbar">
+            <ul>
+                <li class="logo-item"><a href="index.html" class="logo"><img src="./logo-icon.svg" alt=""></a></li>
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="match.html" class="nav-item">Matches</a></li>
+                <li><a href="user-profile.html" class="nav-item">Profile</a></li>
+                <li><a href="notification.html" class="nav-item">Notification</a></li>
+                <li class="search-item"><a href="#" class="nav-item">Search</a></li>
+            </ul>
+        </div>
+        <div class="setting">
+            <i class="ri-settings-4-line" id="setting" onClick="rotateIcon()"></i>
+        </div>
+    </nav>
+
+    <!-- Setting content -->
+    <div class="setting-div" id="setting-div">
+        <div class="setting-item">
+            <a href="faq.html">Change password</a>
+        </div>
+        <div class="setting-item">
+            <a href="aboutUs.html">Delete profile</a>
+        </div>
+        <div class="setting-item">
+            <a href="contact.html">Privacy</a>
+        </div>
+        <div class="setting-item">
+            <a href="#">Logout</a>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="sec-1">
+            <div id="left-sec-1">
+                <div id="link-div">
+                    <div class="link-tags">
+                        <a href="./profiles.html">Like Profile</a>
+                        <p>01</p>
+                    </div>
+                    <div class="link-tags">
+                        <a href="./profiles.html">Unlike Profile</a>
+                        <p>00</p>
+                    </div>
+                    <div class="link-tags">
+                        <a href="./profiles.html">Short Listed</a>
+                        <p>00</p>
+                    </div>
+                    <div class="link-tags">
+                        <a href="./profiles.html">Blocked Profile</a>
+                        <p>00</p>
+                    </div>
+                    <div class="link-tags">
+                        <a href="./profiles.html">I Viewed Profile</a>
+                        <p>00</p>
+                    </div>
+                    <div class="link-tags">
+                        <a href="./profiles.html">Viewed My Profile</a>
+                        <p>00</p>
+                    </div>
+                    <div class="link-tags">
+                        <a href="./profiles.html">My Express Interest</a>
+                        <p>00</p>
+                    </div>
+                </div>
+            </div>
+            <div id="right-sec-1">
+                <div id="rr1-sec-1">
+                    <div id="img-div">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="">
+                    </div>
+                    <h1>Angelina</h1>
+                    <h4>Software Developer</h4>
+                </div>
+                <div id="rr2-sec-1">
+                    <div class="user-details">
+                        <h4>Matri ID</h4>
+                        <div id="user-details-rgt">
+                            <p>100102</p>
+                        </div>
+                    </div>
+                    <div class="user-details">
+                        <h4>DOB</h4>
+                        <div id="user-details-rgt">
+                            <p>01/01/2000</p>
+                        </div>
+                    </div>
+                    <div class="user-details">
+                        <h4>Gender</h4>
+                        <div id="user-details-rgt">
+                            <p>Male</p>
+                        </div>
+                    </div>
+                    <div class="user-details">
+                        <h4>City</h4>
+                        <div id="user-details-rgt">
+                            <p>Bhopal</p>
+                        </div>
+                    </div>
+                    <div class="user-details">
+                        <h4>State</h4>
+                        <div id="user-details-rgt">
+                            <p>Madhya Pradesh</p>
+                        </div>
+                    </div>
+                    <div class="user-details">
+                        <h4>Email</h4>
+                        <div id="user-details-rgt">
+                            <p>something@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-details">
+                        <h4>Work Phone</h4>
+                        <div id="user-details-rgt">
+                            <p>1234567891</p>
+                        </div>
+                    </div>
+                    <button>Edit Profile</button>
+                </div>
+            </div>
+        </div>
+        <div id="sec-2">
+            <div class="table">
+                <div class="table-nav">
+                    <h5>Basic Details</h5>
+                    <h5>Life Style Details</h5>
+                    <h5>About Me & Hobby</h5>
+                    <h5>Religious Information</h5>
+                    <h5>Location Information</h5>
+                    <h5>Education Occupation Information</h5>
+                    <h5>Family Details</h5>
+                </div>
+                <div class="table-section">
+                    <div class="edit">
+                        <i class="ri-pencil-fill"></i>
+                        <p>Edit</p>
+                    </div>
+                    <div class="sec-1">
+                        <div class="dets">
+                            <h3>Name:</h3>
+                            <p>Ravi Kumar</p>
+                        </div>
+                        <div class="dets">
+                            <h3>Marital Status:</h3>
+                            <p>Unamarried</p>
+                        </div>
+                        <div class="dets">
+                            <h3>Mother Tongue:</h3>
+                            <p>Sindhi</p>
+                        </div>
+                        <div class="dets">
+                            <h3>Languages Known:</h3>
+                            <p>English, Hindi</p>
+                        </div>
+                    </div>
+                    <div class="sec-2">
+                        <div class="dets">
+                            <h3>Height:</h3>
+                            <p>162 cm</p>
+                        </div>
+                        <div class="dets">
+                            <h3>Weight:</h3>
+                            <p>65 kg</p>
+                        </div>
+                        <div class="dets">
+                            <h3>DOB:</h3>
+                            <p>01/01/2000 (22 Years)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="table-nav">
+                    <h5>Basic Prefrence</h5>
+                    <h5>Life Style Prefrence</h5>
+                    <h5>Religious Prefrence</h5>
+                    <h5>Location Prefrence</h5>
+                    <h5>Education / Occupation Prefrence</h5>
+                </div>
+                <div class="table-section">
+                    <div class="edit">
+                        <i class="ri-pencil-fill"></i>
+                        <p>Edit</p>
+                    </div>
+                    <div class="sec-1">
+                        <div class="dets">
+                            <h3>Looking For:</h3>
+                            <p>Unamarried</p>
+                        </div>
+                        <div class="dets">
+                            <h3>Partner Skin Tone:</h3>
+                            <p>Fair</p>
+                        </div>
+                        <div class="dets">
+                            <h3>Age Prefrence:</h3>
+                            <p>19 to 27 Years</p>
+                        </div>
+                        <div class="dets">
+                            <h3>Languages Known:</h3>
+                            <p>N/A</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./profile.js"></script>
+</body>
+</html>

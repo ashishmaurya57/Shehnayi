@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- CSS link -->
+    <link rel="stylesheet" href="contact.css" />
+
+    <!-- nav -->
+    <!-- <link rel="stylesheet" href="./home.css"> -->
+
+    <!-- form css link-->
+     <!-- <link rel="stylesheet" href="styleform.css"> -->
+    <!-- Google fonts cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@300;700&display=swap" rel="stylesheet" />
+
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Remixicons cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="mobileview">
+        <i class="ri-close-line">
+        </i>
+        <div id="nav-elements">
+            <a href="index.html">HOME</a>
+            <a href="aboutUs.html">ABOUT US</a> 
+            <a href="membership-plan.html">MEMBERSHIP</a> 
+            <a href="#">LOGIN</a>
+            <a id="mobile-register" href="#">REGISTER</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a id="menu"><i class='bx bx-menu'></i></a>
+        <div class="logo">
+            <a href="#"><img src="./Icons/logo-icon.png" alt="Sehnayi"></a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="membership-plan.html">Membership</a></li>
+                <li><a id="log" href="#">Login</a></li>
+                <li><p id="reg" class="register-popup">Register</p></li>
+                <li><a href="profiles.html">Contact us</a></li>
+                    
+                <div class="profile">
+                    <div class="profile-icon">
+                        <a id="user" href="#"><img src="./Icons/profile-icon.svg" alt=""></a>
+                    </div>
+                </div> 
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pop Up-1 -->
+    <div class="pop-up">
+        <div class="form-div" id="form-1">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Let's set up your Account, while we find Matches for you!</h4>
+            <form id="account-form" action="">
+                <h6>Profile</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Myself</option>
+                </select>
+                <h6>Name</h6>
+                <div id="flex-div">
+                    <input class="name" type="text" placeholder="First Name">
+                    <input class="name" type="text" placeholder="Last Name">
+                </div>
+                <h6>Religious</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Community</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Write about yourself</h6>
+                <textarea id="w3review" name="w3review" rows="4" cols="30" placeholder="write something..."></textarea>
+                <button class="file-upload" onclick="document.getElementById('getFile').click()">Upload photo</button>
+                <input type='file' id="getFile" style="display:none">
+                <div id="btn">
+                    <button id="submit-btn">Submit</button>
+                </div>
+                <h5>Already a Member? <a id="login" href="#">Login</a></h5>
+            </form>
+        </div>
+        <div class="form-div" id="form-2" >
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Great! Now some basic <br> details about you</h4>
+            <form id="account-form" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="text" placeholder="Email Address">
+                <div id="flex-div">
+                    <div id="top">
+                    <h6>Phone No.</h6>
+                    <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                    <h6>Alternate Phone No.</h6>
+                    <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>Date of Birth</h6>
+                <input class="name" id="a" type="text" placeholder="MM/DD/YY">
+                <h6>Living in (Currently)</h6>
+                <input class="name" id="a" type="text" placeholder="Type">
+                <div id="btn-flex">
+                    <a id="form-2-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-3">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Thanks for Registering! <br> Now let's build your profile</h4>
+            <form id="account-form" action="">
+                <h6>Home Town</h6>
+                <div id="flex-div">
+                    <select name="City" class="town">
+                        <option value="">City</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                    <select name="City" class="town">
+                        <option value="">State</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                </div>
+                <h6>Marital Status</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Sub Community</h6>
+                <input class="name" type="text" placeholder="Type">
+                <div id="flex-div">
+                    <div id="top">
+                        <h6>Height</h6>
+                        <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                        <h6>Weight</h6>
+                        <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>Skin Tone</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-3-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-2">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-4">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Please add Education & <br> Career details</h4>
+            <form id="account-form" action="">
+                <h6>Highest Qualification</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>College</h6>
+                <input class="name" type="text" placeholder="Type">
+                <div id="flex-div">
+                    <div id="top">
+                    <h6>Currently work at</h6>
+                    <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                    <h6>Designation</h6>
+                    <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>Annual Income</h6>
+                <input class="name" type="text" placeholder="Type">
+                <div id="btn-flex">
+                    <a id="form-4-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-3">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-5">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Food & Lifestyle</h4>
+            <form id="account-form" action="">
+                <h6>Eating Habit</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Drinking Habit</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Smoking Habit</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-5-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-4">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-6">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Some details about the <br> family</h4>
+            <form id="account-form" action="">
+                <div id="flex-div">
+                    <div id="top">
+                        <h6>Father's Status</h6>
+                        <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                        <h6>Mother's Status</h6>
+                        <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>No. of Brothers:</h6>
+                <div id="flex-div">
+                    <div id="top">
+                        <h6>Married</h6>
+                        <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                        <h6>Unmarried</h6>
+                        <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>No. of Sisters:</h6>
+                <div id="flex-div">
+                    <div id="top">
+                        <h6>Married</h6>
+                        <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                        <h6>Unmarried</h6>
+                        <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>Family Affluence</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-6-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-5">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-7">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Partner's Basic <br> Information</h4>
+            <form id="account-form" action="">
+                <h6>Age</h6>
+                <div id="flex-div">
+                    <select name="City" class="town">
+                        <option value="">Select</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                    <h6>to</h6>
+                    <select name="City" class="town">
+                        <option value="">Select</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                </div>
+                <h6>Marital Status</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Diet</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Height</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Community</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Manglik</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                    <option value="">Yes</option>
+                    <option value="">No</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-7-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-6">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-8">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Location Priority</h4>
+            <form id="account-form" action="">
+                <h6>City</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>State</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Country</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-8-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-7">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-9">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Location Education & Career</h4>
+            <form id="account-form" action="">
+                <h6>Qualification</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Education</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Annual Income</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-9-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-8"><a href="biodata.html">Submit</a></button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="login-form" >
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Login<h4>
+            <form id="login-form-inner" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="email" placeholder="Email Address">
+                <h6>Password</h6>
+                <input class="name" type="password" placeholder="Password">
+                <button id="next-btn"><a href="#">Submit</a></button>
+                <button id="next-btn"><a href="#">Share</a></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login-pop-up -->
+    <div class="login-pop-up">
+        <div class="form-div" id="login-form" >
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Login<h4>
+            <form id="account-form" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="text" placeholder="Email Address">
+                <div id="flex-div">
+                    <div id="top">
+                        <h6>Phone No.</h6>
+                        <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                        <h6>Alternate Phone No.</h6>
+                        <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <div id="btn-flex">
+                    <a id="form-2-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- SECTION 1 -->
+    <section class="sec2">
+        <div class="sec2-groom-div">
+            <img src="img/groom-img.svg" alt="" />
+        </div>
+        <div class="container">
+            <h1 class="heading">CONTACT US</h1>
+            <div class="inner-container">
+                <div id="left-pt">
+                    <div class="grid">
+                        <img src="img/navigation.svg" alt="" />
+                        <p>
+                        4-5 Gufa Mandir Rd,<br />
+                        Nayapura,Lalghati,Bhopal,<br />
+                        Madhya Pradesh 462030
+                        </p>
+                        <img src="img/communication.svg" alt="" />
+                        <p>07314855565</p>
+                        <img src="img/mail.svg" alt="" />
+                        <p>Contact@shehnayi.com</p>
+                        </div>
+                        <div class="btn-div">
+                        <button type="submit" class="sec2-btn1">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            </svg>
+                            <p>&ensp; Chat with us</p>
+                        </button>
+    <h3 class="social-handles-head">Follow Us</h3>
+                <div class="social-handles">
+                <a href="#">
+                    <img src="img/facebook-logo.svg" alt="" />
+                </a>
+                <a href="#">
+                    <img src="img/twitter-logo.svg" alt="" />
+                </a>
+                <a href="#">
+                    <img src="img/insta-logo.svg" alt="" />
+                </a>
+                <a href="#">
+                    <img src="img/linkedin-logo.svg" alt="" />
+                </a>
+                </div>
+                        <!-- <button type="submit" class="sec2-btn2">
+                            <img src="img/sec2-button2-img.svg" alt="" />
+                            <p>Chat with us</p>
+                        </button> -->
+                        </div>
+                </div>
+                <div id="ryt-pt">
+                    <div class="container">  
+                        <form id="contact" action="" method="post">
+                          <fieldset>
+                            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                          </fieldset>
+                          <fieldset>
+                            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                          </fieldset>
+                          <fieldset>
+                            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                          </fieldset>
+                          <fieldset>
+                            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                          </fieldset>
+                          <fieldset>
+                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                          </fieldset>
+                        </form>
+                      </div>
+                </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <div class="sec2-bride-div">
+            <img src="img/bride-img.svg" alt="" />
+        </div>
+    </section>
+
+    <footer class="foot">
+        <div class="footer-end">
+            <h4 class="terms-condtns">Terms and Conditions</h4>
+            <h4 class="privacy-policy">Privacy Policy</h4>
+            <h4 class="contact-us">Contact Us</h4>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="contact.js"></script>
+</body>
+</html>

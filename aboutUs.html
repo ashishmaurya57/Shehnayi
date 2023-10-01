@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+
+    <!-- Title icon -->
+    <link rel="icon" type="image/icon" href="./icons/title-icon.png">
+
+    <!-- CSS link -->
+    <link href="aboutUs.css" rel="stylesheet" />
+
+    <!-- Remixicons cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!-- Boxicons cdn -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <div id="mobileview">
+        <i class="ri-close-line">
+        </i>
+        <div id="nav-elements">
+            <a href="index.html">HOME</a>
+            <a href="aboutUs.html">ABOUT US</a> 
+            <a href="membership-plan.html">MEMBERSHIP</a> 
+            <a href="#">LOGIN</a>
+            <a id="mobile-register" href="#">REGISTER</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a id="menu"><i class='bx bx-menu'></i></a>
+        <div class="logo">
+            <a href="#"><img src="./Icons/logo-icon.png" alt="Sehnayi"></a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="membership-plan.html">Membership</a></li>
+                <li><a id="log" href="#">Login</a></li>
+                <li><p id="reg" class="register-popup">Register</p></li>
+                <li><a href="profiles.html">Contact us</a></li>
+                    
+                <div class="profile">
+                    <div class="profile-icon">
+                        <a id="user" href="#"><img src="./Icons/profile-icon.svg" alt=""></a>
+                    </div>
+                </div> 
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pop Up-1 Register -->
+    <div class="pop-up">
+        <div class="form-div" id="form-1">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Let's set up your Account, while we find Matches for you!</h4>
+            <form id="account-form" action="">
+                <h6>Profile for</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Myself</option>
+                </select>
+                <h6>Name</h6>
+                <div id="flex-div">
+                    <input class="name" type="text" placeholder="First Name">
+                    <input class="name" type="text" placeholder="Last Name">
+                </div>
+                <h6>Religious</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Community</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn">
+                    <button id="submit-btn">Next</button>
+                </div>
+                <h5>Already a Member?<a id="login" href="#">Login</a></h5>
+            </form>
+        </div>
+        <div class="form-div" id="form-2" >
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Great! Now some basic <br> details about you</h4>
+            <form id="account-form" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="text" placeholder="Email Address">
+                <div id="flex-div">
+                  <div id="top">
+                    <h6>Phone No.</h6>
+                    <input class="name" type="text" placeholder="Type">
+                  </div>
+                  <div id="bottom">
+                    <h6>Alternate Phone No.</h6>
+                    <input class="name" type="text" placeholder="Type">
+                  </div>
+                </div>
+                <h6>Date of Birth</h6>
+                <input class="name" id="a" type="text" placeholder="MM/DD/YY">
+                <h6>Living in (Currently)</h6>
+                <input class="name" id="a" type="text" placeholder="Type">
+                <div id="btn-flex">
+                  <a id="form-2-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                  <button id="next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-3">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Thanks for Registering! <br> Now let's build your profile</h4>
+            <form id="account-form" action="">
+                <h6>Home Town</h6>
+                <div id="flex-div">
+                    <select name="City" class="town">
+                        <option value="">City</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                    <select name="City" class="town">
+                        <option value="">State</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                </div>
+                <h6>Marital Status</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Sub Community</h6>
+                <input class="name" type="text" placeholder="Type">
+                <div id="flex-div">
+                    <div id="top">
+                      <h6>Height</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                      <h6>Weight</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>Skin Tone</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-3-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-2">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-4">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Please add Education & <br> Career details</h4>
+            <form id="account-form" action="">
+              <h6>Highest Qualification</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>College</h6>
+              <input class="name" type="text" placeholder="Type">
+              <div id="flex-div">
+                  <div id="top">
+                    <h6>Currently work at</h6>
+                    <input class="name" type="text" placeholder="Type">
+                  </div>
+                  <div id="bottom">
+                    <h6>Designation</h6>
+                    <input class="name" type="text" placeholder="Type">
+                  </div>
+              </div>
+              <h6>Annual Income</h6>
+              <input class="name" type="text" placeholder="Type">
+                <div id="btn-flex">
+                    <a id="form-4-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-3">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-5">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Food & Lifestyle</h4>
+            <form id="account-form" action="">
+              <h6>Eating Habit</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>Drinking Habit</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>Smoking Habit</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+                <div id="btn-flex">
+                    <a id="form-5-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-4">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-6">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Some details about the <br> family</h4>
+            <form id="account-form" action="">
+                <div id="flex-div">
+                    <div id="top">
+                      <h6>Father's Status</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                      <h6>Mother's Status</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>No. of Brothers:</h6>
+                <div id="flex-div">
+                    <div id="top">
+                      <h6>Married</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                      <h6>Unmarried</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>No. of Sisters:</h6>
+                <div id="flex-div">
+                    <div id="top">
+                      <h6>Married</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                      <h6>Unmarried</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>Family Affluence</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-6-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-5">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-7">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Partner's Basic <br> Information</h4>
+            <form id="account-form" action="">
+                <h6>Age</h6>
+                <div id="flex-div">
+                    <select name="City" class="town">
+                        <option value="">Select</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                    <h6>to</h6>
+                    <select name="City" class="town">
+                        <option value="">Select</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                </div>
+                <h6>Marital Status</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Diet</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Height</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Community</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Manglik</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                    <option value="">Yes</option>
+                    <option value="">No</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-7-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-6">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-8">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Location Priority</h4>
+            <form id="account-form" action="">
+                <h6>City</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>State</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Country</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-8-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-7">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-9">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Location Education & Career</h4>
+            <form id="account-form" action="">
+                <h6>Qualification</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Education</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Annual Income</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-9-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-8">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-10">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>About Yourself</h4>
+            <form id="account-form" action="">
+                <h6>Write about yourself</h6>
+                <textarea id="w3review" name="w3review" rows="4" cols="30" placeholder="write something..."></textarea>
+                <button class="file-upload" onclick="document.getElementById('getFile').click()">Upload photo</button>
+                <input type='file' id="getFile" style="display:none">
+                <div id="btn-flex">
+                    <a id="form-10-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-9"><a href="biodata.html">Submit</a></button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="login-form" >
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Login<h4>
+            <form id="login-form-inner" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="email" placeholder="Email Address" required>
+                <h6>Password</h6>
+                <input class="name" type="password" placeholder="Password" required>
+                <button id="next-btn"><a href="#">Submit</a></button>
+                <button id="next-btn"><a href="#">Share</a></button>
+            </form>
+            <h5>New Member?<a id="reg" href="#">Register</a></h5>
+        </div>
+    </div>
+
+    <!-- Login-pop-up -->
+    <div class="login-pop-up">
+        <div class="form-div" id="login_form">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Login</h4>
+            <form id="login-form-inner" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="email" placeholder="Email Address" required>
+                <h6>Password</h6>
+                <input class="name" type="password" placeholder="Password" required>
+                <button id="next-btn"><a href="#">Submit</a></button>
+                <button id="next-btn"><a href="#">Share</a></button>
+            </form>
+            <h5>New Member?<a id="reg" href="#">Register</a></h5>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+   <h1 class="page-heading">About Us</h1>
+   
+   <div class="sec-1">
+    <div class="sec1-about">
+        <p class="heading-about">Shehnayi is a match-making company exclusively for sindhi community. We are trying to resolve the problem and shorten the long-time taking process of finding someone special for you. Get a perfect match by using modern technology but still following the traditional values and cultures. We are here to serve you in a best possible way.</p>
+        <h2 class="sec1-message">Our message</h2>
+        <p class="message">The Best Marketers enjoy and love what they do. Shehnayi team always wnsures Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusantium, tempora harum eveniet vitae enim laudantium animi similique aliquam sequi, eligendi sit corrupti sint quos. Adipisci soluta molestias cumque incidunt!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, itaque nemo architecto voluptatibus natus illo voluptates adipisci sunt qui ea impedit eveniet nulla. Ratione accusamus tempora, architecto commodi dignissimos perferendis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolores doloribus quaerat sapiente eius, recusandae et aliquid quia soluta unde delectus odio nemo ipsum est rerum repellat fuga necessitatibus ab?
+        </p>
+    </div>
+    <div class="sec1-img">
+        <img src="./Images/about-us-couple.png" alt="">
+    </div>
+   </div>
+
+    <div class="sec-2">
+        <div class="sec-2-bgimg">
+            <img src="./rings.png" alt="">
+        </div>
+        <div class="sec-2-team">
+            <div class="sec-2-icons">
+                <div id="pic-1"></div>
+                <div id="pic-2"></div>
+                <div id="pic-3"></div>
+                <div id="pic-4"></div>
+                <div id="pic-5"></div>
+            </div>
+            <div class="sec2-team-about">
+                <a href="./our_team.html"><h2 class="sec2-team-heading">Shehnayi Team</h2></a>
+                <p class="sec2-team-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat maxime excepturi temporibus, molestiae deleniti cumque distinctio perspiciatis ullam! Temporibus dolorum hic rem recusandae magnam voluptatum consequuntur corporis minus aperiam tempora!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sec-3">
+        <div class="sec-3-investor">
+            <h2 class="sec-3-heading">Our Vision</h2>
+            <p class="sec-3-desc">Shehnayi’s vision is to build a close and healthy relationship with our clients and wants to build trust among our community by understanding our client’s needs for a partner and providing services to meet their needs and work accordingly. Marriage involves two different personalities with different perspectives, emotions, desires, feelings, and needs, so by understanding client’s requirements we want to make the selection process easy for them and serve them in a better way.</p>
+        </div>
+        <div class="sec-3-image">
+            <img src="./Images/about-investors.webp" alt="">
+        </div>
+    </div>
+
+    <div class="sec-4">
+        <h2 class="sec-4-heading">Our Mission</h2>
+        <p class="sec-4-desc">Our mission and objectives are to serve our community by providing genuine and verified profile information, to shorten the long-time taking process of searching matches and help them to find their perfect life partner. We are trying to do this with the help of advance technology to make the process easier and more convenient for people to search and select the suitable matches for them.
+        </p>
+    </div>
+
+   
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="logo-img">
+            <img src="./Icons/logo-icon.svg" alt="">
+        </div>
+        <div class="footer-links">
+            <div class="foot-links-div">
+                <h4 class="links-title">Need Help?</h4>
+                <ul class="foot-links">
+                    <li><a href="#">Member Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Partner Search</a></li>
+                    <li><a href="#">How to use</a></li>
+                    <li><a href="#">Premium membership</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </ul>
+            </div>
+            <div class="foot-links-div">
+                <h4 class="links-title">Company</h4>
+                <ul class="foot-links">
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Shaadi Blogs</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="foot-links-div">
+                <h4 class="links-title">Privacy & You</h4>
+                <ul class="foot-links">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Be Safe Online</a></li>
+                    <li><a href="#">Reports Misuse</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-links">
+            <h4 class="social-title">
+                Follow Us
+            </h4>
+            <div class="social-icons">
+                <img src="./Icons/footer-fb-icon.svg" alt="">
+                <img src="./Icons/footer-twitter-icon.svg" alt="">
+                <img src="./Icons/footer-insta-icon.svg" alt="">
+                <img src="./Icons/footer-linkedin-icon.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-end">
+            <h4 class="terms-condtns">Terms and Conditions</h4>
+            <h4 class="privacy-policy">Privacy Policy</h4>
+            <h4 class="contact-us">Contact Us</h4>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="aboutUs.js"></script>
+
+</body>
+</html>

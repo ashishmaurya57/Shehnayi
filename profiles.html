@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Mobileview navbar-->
+    <div id="mobileview">
+        <i class="ri-close-line">
+        </i>
+        <div id="nav-elements">
+            <a href="index.html" class="m-nav-item">HOME</a>
+            <a href="#" class="m-nav-item">MATCHES</a> 
+            <a href="user-profile.html" class="m-nav-item">PROFILE</a>
+            <a href="#" class="m-nav-item">NOTIFICATION</a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="profile-navbar">
+        <div class="navbar">
+            <ul>
+                <li class="logo-item"><a href="index.html" class="logo"><img src="./logo-icon.svg" alt=""></a></li>
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="match.html" class="nav-item">Matches</a></li>
+                <li><a href="user-profile.html" class="nav-item">Profile</a></li>
+                <li><a href="notification.html" class="nav-item">Notification</a></li>
+                <li class="search-item"><a href="#" class="nav-item">Search</a></li>
+            </ul>
+        </div>
+        <div class="setting">
+            <i class="ri-settings-4-line" id="setting" onClick="rotateIcon()"></i>
+        </div>
+    </nav>
+
+    <!-- Setting content -->
+    <div class="setting-div" id="setting-div">
+        <div class="setting-item">
+            <a href="faq.html">Change password</a>
+        </div>
+        <div class="setting-item">
+            <a href="aboutUs.html">Delete profile</a>
+        </div>
+        <div class="setting-item">
+            <a href="contact.html">Privacy</a>
+        </div>
+        <div class="setting-item">
+            <a href="#">Logout</a>
+        </div>
+    </div>
+
+
+    <div id="main">
+        <div id="sec-1">
+            <div id="left-sec-1">
+                <div id="link-div">
+                    <div class="link-tags">
+                        <a href="#">Like Profile</a>
+                        <p>01</p>
+                    </div>
+                    <div class="link-tags">
+                        <a href="#">Unlike Profile</a>
+                        <p>00</p>
+                    </div>
+                    <div class="link-tags">
+                        <a href="#">Short Listed</a>
+                        <p>00</p>
+                    </div>
+                    <div class="link-tags">
+                        <a href="#">Blocked Profile</a>
+                        <p>00</p>
+                    </div>
+                    <div class="link-tags">
+                        <a href="#">I Viewed Profile</a>
+                        <p>00</p>
+                    </div>
+                    <div class="link-tags">
+                        <a href="#">Viewed My Profile</a>
+                        <p>00</p>
+                    </div>
+                    <div class="link-tags">
+                        <a href="#">My Express Interest</a>
+                        <p>00</p>
+                    </div>
+                </div>
+            </div>
+            <div id="right-sec-1">
+                <div id="user-table">
+                    <div id="table-lft">
+                        <div id="img-div">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="">
+                        </div>
+                    </div>
+                    <div id="table-rgt">
+                        <div id="rgt-top">
+                            <h2>Angelina</h2>
+                            <p>Software Developer</p>
+                        </div>
+                        <div id="rgt-bottom">
+                            <div id="btm-lft">
+                                <div id="detss">
+                                    <p>28 Years, 164 cm</p>
+                                    <p>B.E / B.Tech</p>
+                                </div>
+                                <div id="detss">
+                                    <p>Hindu, Sindhi</p>
+                                    <p>Sindhi</p>
+                                </div>
+                                <div id="detss">
+                                    <p>Software Professional</p>
+                                    <p>India, Bhopal</p>
+                                </div>
+                                <p>I am interested in your profile. Please Accept if you are interested.</p>
+                            </div>
+                            <div id="btm-rgt">
+                                <i class="ri-chat-1-line"></i>
+                                <i class="ri-close-line"></i>
+                                <a href="user-profile.html"><i class="ri-profile-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./profile.js"></script>
+</body>
+</html>

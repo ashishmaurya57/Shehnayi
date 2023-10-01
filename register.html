@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="register.css">
+
+    <!-- Google fonts cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="mobileview">
+        <i class="ri-close-line">
+        </i>
+        <div id="nav-elements">
+            <a href="index.html">HOME</a>
+            <a href="aboutUs.html">ABOUT US</a>  
+            <a href="login.html">LOGIN</a>
+            <a href="register.html">REGISTER</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+    </div>
+    <div class="navbar">
+        <a id="menu" href="#"><i class='bx bx-menu'></i></a>
+        <div class="logo">
+            <img src="./Icons/logo-icon.svg" alt="Sehnayi-Logo">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li class="home"><a href="#">Home</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                    
+                <div class="profile">
+                    <div class="profile-icon">
+                        <a id="user" href="#"><img src="./Icons/profile-icon.svg" alt=""></a>
+                    </div>
+                </div> 
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-sec">
+        <div id="right-sec">
+            <div id="form-div" class="f1">
+                <h4>Let's set up your Account, while we find Matches for you!</h4>
+                <form id="account-form" action="">
+                    <h6>Profile</h6>
+                    <select class="profile" name="profil-for">
+                        <option value="">Myself</option>
+                    </select>
+                    <h6>Name</h6>
+                    <div id="flex-div">
+                        <input class="name" type="text" placeholder="First Name">
+                        <input class="name" type="text" placeholder="Last Name">
+                    </div>
+                    <h6>Religious</h6>
+                    <select class="profile" name="profil-for">
+                        <option value="">Select</option>
+                    </select>
+                    <h6>Community</h6>
+                    <select class="profile" name="profil-for">
+                        <option value="">Select</option>
+                    </select>
+                    <div id="btn">
+                        <button><a href="#">Submit</a></button>
+                    </div>
+                    <h5>Already a Member? <a id="login" href="#">Login</a></h5>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="logo-img">
+            <img src="./Icons/logo-icon.svg" alt="">
+        </div>
+        <div class="footer-links">
+            <div class="foot-links-div">
+                <h4 class="links-title">Need Help?</h4>
+                <ul class="foot-links">
+                    <li><a href="#">Member Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Partner Search</a></li>
+                    <li><a href="#">How to use</a></li>
+                    <li><a href="#">Premium membership</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </ul>
+            </div>
+            <div class="foot-links-div">
+                <h4 class="links-title">Company</h4>
+                <ul class="foot-links">
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Shaadi Blogs</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="foot-links-div">
+                <h4 class="links-title">Privacy & You</h4>
+                <ul class="foot-links">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Be Safe Online</a></li>
+                    <li><a href="#">Reports Misuse</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-links">
+            <h4 class="social-title">
+                Follow Us
+            </h4>
+            <div class="social-icons">
+                <img src="./Icons/footer-fb-icon.svg" alt="">
+                <img src="./Icons/footer-twitter-icon.svg" alt="">
+                <img src="./Icons/footer-insta-icon.svg" alt="">
+                <img src="./Icons/footer-linkedin-icon.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-end">
+            <h4 class="terms-condtns">Terms and Conditions</h4>
+            <h4 class="privacy-policy">Privacy Policy</h4>
+            <h4 class="contact-us">Contact Us</h4>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

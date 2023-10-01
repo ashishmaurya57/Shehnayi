@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehnayi</title>
+
+    <!-- Title icon -->
+    <link rel="icon" type="image/icon" href="./icons/title-icon.png">
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="home.css">
+
+    <!-- faq -->
+    <!-- <link rel="stylesheet" href="faq.css"> -->
+
+    <!-- Boxicons cdn -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- AOS cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Remixicons cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="mobileview">
+        <i class="ri-close-line">
+        </i>
+        <div id="nav-elements">
+            <a href="index.html">HOME</a>
+            <a href="aboutUs.html">ABOUT US</a> 
+            <a href="membership-plan.html">MEMBERSHIP</a> 
+            <a href="#">LOGIN</a>
+            <a id="mobile-register" href="#">REGISTER</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a id="menu"><i class='bx bx-menu'></i></a>
+        <div class="logo">
+            <a href="#"><img src="./Icons/logo-icon.png" alt="Sehnayi"></a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="membership-plan.html">Membership</a></li>
+                <li><a id="log" href="#">Login</a></li>
+                <li><p id="reg" class="register-popup">Register</p></li>
+                <li><a href="profiles.html">Contact us</a></li>
+                    
+                <div class="profile">
+                    <div class="profile-icon">
+                        <a id="user" href="#"><img src="./Icons/profile-icon.svg" alt=""></a>
+                    </div>
+                </div> 
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pop Up-1 Register -->
+    <div class="pop-up">
+        <div class="form-div" id="form-1">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Let's set up your Account, while we find Matches for you!</h4>
+            <form id="account-form" action="">
+                <h6>Profile for</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Myself</option>
+                </select>
+                <h6>Name</h6>
+                <div id="flex-div">
+                    <input class="name" type="text" placeholder="First Name">
+                    <input class="name" type="text" placeholder="Last Name">
+                </div>
+                <h6>Religious</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Community</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn">
+                    <button id="submit-btn">Next</button>
+                </div>
+                <h5>Already a Member?<a id="login" href="#">Login</a></h5>
+            </form>
+        </div>
+        <div class="form-div" id="form-2" >
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Great! Now some basic <br> details about you</h4>
+            <form id="account-form" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="text" placeholder="Email Address">
+                <div id="flex-div">
+                  <div id="top">
+                    <h6>Phone No.</h6>
+                    <input class="name" type="text" placeholder="Type">
+                  </div>
+                  <div id="bottom">
+                    <h6>Alternate Phone No.</h6>
+                    <input class="name" type="text" placeholder="Type">
+                  </div>
+                </div>
+                <h6>Date of Birth</h6>
+                <input class="name" id="a" type="text" placeholder="MM/DD/YY">
+                <h6>Living in (Currently)</h6>
+                <input class="name" id="a" type="text" placeholder="Type">
+                <div id="btn-flex">
+                  <a id="form-2-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                  <button id="next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-3">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Thanks for Registering! <br> Now let's build your profile</h4>
+            <form id="account-form" action="">
+                <h6>Home Town</h6>
+                <div id="flex-div">
+                    <select name="City" class="town">
+                        <option value="">City</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                    <select name="City" class="town">
+                        <option value="">State</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                </div>
+                <h6>Marital Status</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Sub Community</h6>
+                <input class="name" type="text" placeholder="Type">
+                <div id="flex-div">
+                    <div id="top">
+                      <h6>Height</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                      <h6>Weight</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>Skin Tone</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-3-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-2">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-4">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Please add Education & <br> Career details</h4>
+            <form id="account-form" action="">
+              <h6>Highest Qualification</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>College</h6>
+              <input class="name" type="text" placeholder="Type">
+              <div id="flex-div">
+                  <div id="top">
+                    <h6>Currently work at</h6>
+                    <input class="name" type="text" placeholder="Type">
+                  </div>
+                  <div id="bottom">
+                    <h6>Designation</h6>
+                    <input class="name" type="text" placeholder="Type">
+                  </div>
+              </div>
+              <h6>Annual Income</h6>
+              <input class="name" type="text" placeholder="Type">
+                <div id="btn-flex">
+                    <a id="form-4-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-3">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-5">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Food & Lifestyle</h4>
+            <form id="account-form" action="">
+              <h6>Eating Habit</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>Drinking Habit</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>Smoking Habit</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+                <div id="btn-flex">
+                    <a id="form-5-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-4">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-6">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Some details about the <br> family</h4>
+            <form id="account-form" action="">
+                <div id="flex-div">
+                    <div id="top">
+                      <h6>Father's Status</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                      <h6>Mother's Status</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>No. of Brothers:</h6>
+                <div id="flex-div">
+                    <div id="top">
+                      <h6>Married</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                      <h6>Unmarried</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>No. of Sisters:</h6>
+                <div id="flex-div">
+                    <div id="top">
+                      <h6>Married</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                      <h6>Unmarried</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>Family Affluence</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-6-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-5">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-7">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Partner's Basic <br> Information</h4>
+            <form id="account-form" action="">
+                <h6>Age</h6>
+                <div id="flex-div">
+                    <select name="City" class="town">
+                        <option value="">Select</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                    <h6>to</h6>
+                    <select name="City" class="town">
+                        <option value="">Select</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                </div>
+                <h6>Marital Status</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Diet</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Height</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Community</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Manglik</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                    <option value="">Yes</option>
+                    <option value="">No</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-7-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-6">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-8">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Location Priority</h4>
+            <form id="account-form" action="">
+                <h6>City</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>State</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Country</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-8-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-7">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-9">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Location Education & Career</h4>
+            <form id="account-form" action="">
+                <h6>Qualification</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Education</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Annual Income</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-9-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-8">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-10">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>About Yourself</h4>
+            <form id="account-form" action="">
+                <h6>Write about yourself</h6>
+                <textarea id="w3review" name="w3review" rows="4" cols="30" placeholder="write something..."></textarea>
+                <button class="file-upload" onclick="document.getElementById('getFile').click()">Upload photo</button>
+                <input type='file' id="getFile" style="display:none">
+                <div id="btn-flex">
+                    <a id="form-10-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-9"><a href="biodata.html">Submit</a></button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="login-form" >
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Login<h4>
+            <form id="login-form-inner" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="email" placeholder="Email Address" required>
+                <h6>Password</h6>
+                <input class="name" type="password" placeholder="Password" required>
+                <button id="next-btn"><a href="#">Submit</a></button>
+                <button id="next-btn"><a href="#">Share</a></button>
+            </form>
+            <h5>New Member?<a id="reg" href="#">Register</a></h5>
+        </div>
+    </div>
+
+    <!-- Login-pop-up -->
+    <div class="login-pop-up">
+        <div class="form-div" id="login_form">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Login</h4>
+            <form id="login-form-inner" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="email" placeholder="Email Address" required>
+                <h6>Password</h6>
+                <input class="name" type="password" placeholder="Password" required>
+                <button id="next-btn"><a href="#">Submit</a></button>
+                <button id="next-btn"><a href="#">Share</a></button>
+            </form>
+            <h5>New Member?<a id="reg" href="#">Register</a></h5>
+        </div>
+    </div>
+
+    <!-- Section-1 -->
+    <div class="head-content">
+        <div class="header-image">
+            <img src="./Images/Ethnic-Punjabi-wedding-couple-photography.jpg" alt="">
+        </div>
+        <h1 class="heading"><span class="heading-span">Exclusively for</span><br>Sindhi Community</h1>
+        <div class="input-form">
+            <form action="" method="" class="details-form">
+                <div class="form-block" id="gender-block">
+                    <label for="gender">I'm looking for a</label>
+                    <select name="gender" id="gender" class="input-form-select">
+                        <option value="Man">Man</option>
+                        <option value="Woman">Woman</option>
+                    </select>
+                </div>
+    
+                <div class="form-block" id="age-block">
+                    <label for="age">age</label>
+                    <div class="age-input">    
+                        <select name="age" id="age"> 
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                        </select>
+                        <span>to</span> 
+                        <select name="age" id="age1">
+                            <option value="40">40</option>
+                            <option value="39">39</option>
+                            <option value="38">38</option>
+                            <option value="37">37</option>
+                            <option value="36">36</option>
+                            <option value="35">35</option>
+                            <option value="35">35</option>
+                            <option value="34">34</option>
+                            <option value="33">33</option>
+                            <option value="32">32</option>
+                            <option value="31">31</option>
+                            <option value="30">30</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="form-block" id="religion-block">
+                    <label for="religion">of state</label>
+                    <select name="religion" id="religion" class="input-form-select">
+                        <option value="Select">Select</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Gujarat">Gujarat</option>
+                    </select>
+                </div>
+    
+                <div class="form-block" id="mother-tongue-block">
+                    <label for="mother-tongue" >and occupation</label>
+                    <select name="mother-tongue" id="mother-tongue" class="input-form-select">
+                        <option value="Select">Select</option>
+                        <option value="hindi">Software Engineer</option>
+                        <option value="sindhi">Businessman</option>
+                        <option value="sindhi">Businessman</option>
+                    </select>
+                </div>
+    
+                <button class="input-form-button" id="begin-btn">Let's Begin</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Section-2 -->
+    <!-- <div class="input-form">
+        <form action="" method="" class="details-form">
+            <div class="form-block" id="gender-block">
+                <label for="gender">I'm looking for a</label>
+                <select name="gender" id="gender" class="input-form-select">
+                    <option value="Man">Man</option>
+                    <option value="Woman">Woman</option>
+                </select>
+            </div>
+
+            <div class="form-block" id="age-block">
+                <label for="age">age</label>
+                <div class="age-input">    
+                    <select name="age" id="age"> 
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                    <span>to</span> 
+                    <select name="age" id="age1">
+                        <option value="40">40</option>
+                        <option value="39">39</option>
+                        <option value="38">38</option>
+                        <option value="37">37</option>
+                        <option value="36">36</option>
+                        <option value="35">35</option>
+                        <option value="35">35</option>
+                        <option value="34">34</option>
+                        <option value="33">33</option>
+                        <option value="32">32</option>
+                        <option value="31">31</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-block" id="religion-block">
+                <label for="religion">of city</label>
+                <select name="religion" id="religion" class="input-form-select">
+                    <option value="Select">Select</option>
+                    <option value="Hindu">Bhopal</option>
+                    <option value="Mulsim">Indore</option>
+                    <option value="Sikh">Delhi</option>
+                    <option value="Jain">Mumbai</option>
+                </select>
+            </div>
+
+            <div class="form-block" id="mother-tongue-block">
+                <label for="mother-tongue" >and occupation</label>
+                <select name="mother-tongue" id="mother-tongue" class="input-form-select">
+                    <option value="Select">Select</option>
+                    <option value="hindi">Software Engineer</option>
+                    <option value="sindhi">Businessman</option>
+                    <option value="sindhi">Businessman</option>
+                </select>
+            </div>
+
+            <button class="input-form-button" id="begin-btn">Let's Begin</button>
+        </form>
+    </div> -->
+
+
+    <!-- Section 3 -->
+    <p class="sec-3-description">
+        Steps to find your perfect life partner 
+    </p>
+    
+    <div class="steps-section">
+        <div class="step-up">
+            <img id="partner1" src="./Icons/sec3-img1.svg" alt="">
+        </div>
+        <div class="step-down">
+            <div class="step-left">
+                <img src="./Icons/sec3-img2.svg" alt="">
+            </div>
+            <div class="step-center">
+                <p class="step-1 steps__ " id="step" data-aos="fade-right" delay=1000>Send or receive Interested call</p>
+                <p class="step-2 steps__ " id="step" data-aos="fade-right" delay=1000>Receive Matching profile</p>
+                <p class="step-3 steps__ " id="step" data-aos="fade-right" delay=1000>Set Partner Preference</p>
+                <p class="step-4 steps__" id="step"  data-aos="fade-right" delay=1000>Create your profile</p>
+            </div>
+            <div class="step-right">
+                <img src="./Icons/sec3-img3.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section 4 -->
+    <h2 class="sec-4-heading">
+        Why Choose <span class="sec-4-tag">Shehnayi?</span>
+    </h2>
+
+    <div class="sec-4-blocks">
+        <div class="block">
+            <div class="border-img">
+                <img src="./Icons/Group_5.png" alt="" class="block2-img2">
+            </div>
+            <p class="block-describe free-registration-text">Free registeration</p>
+        </div>
+        <div class="block">
+            <div class="border-img">
+                <img src="./Icons/sec-4-img1_2.svg" alt="" class="block1-img2">
+                <img src="./Icons/sec-4-img1_3.svg" alt="" class="block1-img3" />
+                <img src="./Icons/sec-4-img1_4.svg" alt="" class="block1-img4" />
+                <img src="./Icons/sec-4-img1_5.svg" alt="" class="block1-img5" />
+                <img src="./Icons/sec-4-img1_6.svg" alt="" class="block1-img6" />
+                <img src="./Icons/sec-4-img1_7.svg" alt="" class="block1-img7" />
+                <img src="./Icons/sec-4-img1_8.svg" alt="" class="block1-img8" />
+                <img src="./Icons/sec-4-img1_9.svg" alt="" class="block1-img9" />
+                <img src="./Icons/sec-4-img1_10.svg" alt="" class="block1-img10" />
+                <img src="./Icons/sec-4-img1_11.svg" alt="" class="block1-img11" />
+                <img src="./Icons/sec-4-img1_12.svg" alt="" class="block1-img12" />
+                <img src="./Icons/sec-4-img1_13.svg" alt="" class="block1-img13" />
+                <img src="./Icons/sec-4-img1_14.svg" alt="" class="block1-img14" />
+                <img src="./Icons/sec-4-img1_15.svg" alt="" class="block1-img15" />
+                <img src="./Icons/sec-4-img1_16.svg" alt="" class="block1-img16" />
+                <img src="./Icons/sec-4-img1_17.svg" alt="" class="block1-img17" />
+                <img src="./Icons/sec-4-img1_18.svg" alt="" class="block1-img18" />
+                <img src="./Icons/sec-4-img1_19.svg" alt="" class="block1-img19" />
+                <img src="./Icons/sec-4-img1_20.svg" alt="" class="block1-img20" />
+                <img src="./Icons/sec-4-img1_21.svg" alt="" class="block1-img21" />
+                <img src="./Icons/sec-4-img1_7.svg" alt="" class="block1-img22" />
+            </div>
+            <p class="block-describe">Exclusive for Sindhi community</p>
+        </div>
+        <div class="block">
+            <div class="border-img">
+                <img src="./Icons/sec-4-img3.svg" alt="" class="block3-img2">
+            </div>
+            <p class="block-describe">Verified Profiles</p>
+        </div>
+        <div class="block">
+            <div class="border-img">
+                <img src="./Icons/sec-4-img4_1.svg" alt="" class="block4-img2">
+                <img src="./Icons/sec-4-img4_2.svg" alt="" class="block4-img3">
+            </div>
+            <p class="block-describe">Save time</p>
+        </div>
+        <div class="block">
+            <div class="border-img">
+                <img src="./Icons/sec-4-img5.svg" alt="" class="block5-img2">
+            </div>
+            <p class="block-describe">Safe and Secure</p>
+        </div>
+        <div class="block">
+            <div class="border-img">
+                <img src="./Icons/sec-4-img6_1.svg" alt="" class="block6-img2">
+                <img src="./Icons/sec-4-img6_2.svg" alt="" class="block6-img3">
+            </div>
+            <p class="block-describe">Advanced Technology</p>
+        </div>
+    </div>
+
+
+    <!-- Section 5 -->
+    <!-- Image-sliding section -->
+    <div class="sec-5">
+        <div id="sec-5-img">
+            <div class="slider-bg-img">
+                <div class="slider1">
+                    <div class="slide-track forward">
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img1.jpg" alt="" /></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img2.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img3.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img4.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img5.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img6.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img7.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img8.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img9.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img10.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img11.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img12.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img13.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img14.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img15.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img16.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img17.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img18.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img19.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img20.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img21.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img22.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img23.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img24.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img25.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img26.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img27.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img28.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img29.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img30.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img31.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img32.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img33.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img34.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img35.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img36.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img37.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img38.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img39.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img40.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img41.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img42.jpg" alt=""/></div>
+                    </div>
+                </div>
+                <div class="slider2">
+                    <div id="reverse" class="slide-track">
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img1.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img2.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img3.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img4.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img5.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img6.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img7.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img8.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img9.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img10.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img11.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img12.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img13.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img14.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img15.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img16.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img17.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img18.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img19.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img20.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img21.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img22.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img23.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img24.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img25.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img26.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img27.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img28.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img29.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img30.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img31.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img32.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img33.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img34.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img35.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img36.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img37.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img38.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img39.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img40.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img41.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img42.jpg" alt=""/></div>
+                    </div>
+                </div>
+                <div class="slider3">
+                    <div class="slide-track forward" id="slide-reverse-track">
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img42.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img41.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img40.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img39.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img38.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img37.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img36.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img35.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img34.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img33.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img32.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img31.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img30.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img29.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img28.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img27.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img26.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img25.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img24.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img23.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img22.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img21.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img20.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img19.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img18.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img17.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img16.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img15.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img14.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img13.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img12.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img11.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img10.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img9.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img8.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img7.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img6.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img5.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img4.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img3.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img2.jpg" alt=""/></div>
+                        <div class="slide"><img class="alignnone size-full wp-image-13024" src="./Images/sec5-img1.jpg" alt=""/></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-5-content">
+                <h2 class="sec-5-heading">
+                    <p class="sec-5-desc">What are you waiting for ?</p>
+                    <p class="sec-5-desc">Let us find your <span class="sec-5-tag">Perfect Match!</span></p>
+                </h2>
+                <button type="submit" class="sec-5-submit" id="main-register-btn">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 6  -->
+    <!-- Slider section-->
+    <h2 class="slide-heading">Rituals in sindhi wedding</h2>
+    <div id="sec-6-main-parent">
+        <div id="sec-6-parent">
+            <div class="elements">
+                <div class="top">
+                    <img src="./Icons/sec-6-img4.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3 class="slide2-heading">Pakki Mishri</h3>
+                    <p>Pakki Mishri is the formal engagement ceremony. Rings are exchanged between the bride and the groom.</a></p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="top">
+                    <img src="./Icons/sec-6-img5.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3 class="slide2-heading">Dev Bithana</h3>
+                    <p class="slide2-desc">Lord Ganesha and other sacred idols are placed on a wooden stool called 'Chakki'. It is believed that God will take care of any hurdle that might trouble the wedding. </p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="top">
+                    <img src="./Icons/sec-6-img6.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3 class="sldie2-heading">Lada (Sangeet)</h3>
+                    <p class="slide2-desc">It is the Sindhi Ladies Sangeet. The name is after the traditional songs that are sung along with dholak in high pitch by the ladies of the house and the neighborhood.</p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="top">
+                    <img src="./Icons/sec-6-img7.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3 class="slide3-heading">Tih</h3>
+                    <p class="slide3-desc">A day prior to the wedding, some 'Shubh Samagri' like rice, coconut, etc. is taken by the bride's guardian to groom's place and a 'puja' is conducted.</p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="top">
+                    <img src="./Icons/sec-6-img8.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3 class="slide3-heading">Mehndi</h3>
+                    <p class="slide3-desc">Mehndi is part of the Solah Shringar, or sixteen bridal adornments, which is a ritual for the beautification of the bride from head to toe at the time of their wedding.</p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="top">
+                    <img src="./Icons/sec-6-img9.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3 class="slide3-heading">Haldi ceremony</h3>
+                    <p class="slide3-desc">A paste of haldi is applied on the bride and the groom's body before their wedding day. The colour yellow is also considered auspicious, and thus is said to ward off the evil. </p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="top">
+                    <img src="./Icons/sec-6-img10.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3 class="slide4-heading">Baraat</h3>
+                    <p class="slide4-desc">The groom's wedding procession to the bride's house.It refers to welcome of the family of the groom by the bride's family. </p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="top">
+                    <img src="./Icons/sec-6-img11.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3 class="slide4-heading">Jai Mala</h3>
+                    <p class="slide4-desc">The jaimala is a token of acceptance. When the bride and the groom exchange the garland, it symbolises the acceptance of would-be man by the would-be wife as her partner for life. </p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="top">
+                    <img src="./Icons/sec-6-img12.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3 class="slide4-heading">Four Pheras</h3>
+                    <p class="slide4-desc">The circling around fire is called phera. This involves chanting of holy verses and taking of wedding vows. </p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="top">
+                    <img src="./Icons/sec-6-img13.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3 class="slide5-heading">Vidai</h3>
+                    <p class="slide5-desc">It is a form of a farewell ceremony organized by the family of the bride to officially bid farewell to their daughter as she leaves for her marital home. </p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="top">
+                    <img src="./Icons/sec-6-img14.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3 class="slide5-heading">Datar</h3>
+                    <p class="slide5-desc">The bride and the groom have to exchange salt three times without dropping any after the bride sprinkles milk in all the four corners of the house. </p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="top">
+                    <img src="./Icons/sec-6-img15.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <h3 class="slide5-heading">Sataurah</h3>
+                    <p class="slide5-desc">The newly wedded couple visits the bride's house post-wedding. </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+            
+    <!-- Section 7 -->
+    <div class="sec-7">
+        <h2 class="sec-7-heading">Membership Plan</h2>
+        <div class="container">
+            <img src="img/rect-top-left.svg" alt="" class="left-corner-img corner-img" />
+            <img src="img/rect-bottom-right.svg" alt="" class="right-corner-img corner-img"/>
+    
+            <h3 class="text-around-price italic">Exclusive Offer</h3>
+            <div class="price-div">
+                <p class="price">Rs 3,078</p>
+                <p class="price-free">Register Free</p>
+            </div>
+            <!-- <h3 class="text-around-price">Rs 257 per month</h3> -->
+            <img src="img/rect-center.svg" alt="" class="rect-center-img" />
+    
+            <div class="grid">
+                <img src="img/right-mark.svg" alt="" class="right-mark" />
+                <p>Browse profiles</p>
+    
+                <img src="img/right-mark.svg" alt="" class="right-mark" />
+                <p>Send Interest</p>
+    
+                <img src="img/right-mark.svg" alt="" class="right-mark" />
+                <p>Standout from other Profiles</p>
+    
+                <img src="img/right-mark.svg" alt="" class="right-mark" />
+                <p>Let Matches contact you directly</p>
+                
+                <img src="img/right-mark.svg" alt="" class="right-mark" />
+                <p>Customer support</p>
+            </div>
+  
+            <button class="join-button"><a href="./membership-plan.html">Register Now!</a></button>
+            <img src="img/rect-bottom-center.svg" alt="" class="rect-bottom-img" />
+        </div>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="bottom-img-div">
+        <img src="img/barati.svg" alt="" class="bottom-img1" />
+        <img src="img/barati.svg" alt="" class="bottom-img2" />
+        <img src="img/barati.svg" alt="" class="bottom-img3" />
+    </div>
+
+    <!-- Section 8 -->
+    <!-- <div class="sec-8">
+        <div class="sec-8-img-div" id="sec-8-left-img">
+            <img src="./Icons/sec-8-img.svg" alt="" class="sec-8-head-img">
+        </div>
+        <div class="sec-8-about">
+            <h4 class="sec-8-head">About Us</h4>
+            <img src="./Icons/logo-icon.svg" alt="" class="sec-8-about-logo">
+            <p class="sec-8-desc">We are a startup in the field of Match Making services Exclusively for Sindhi Community. Our biggest strength is our strong network in regions of Madhya Pradesh, Gujarat, Rajasthan and Maharashtra. We use technology to assist our customers in most efficient way.</p>
+        </div>
+    </div> -->
+
+
+    <!-- Section 9 -->
+    <!-- <div class="sec-9">
+        <div class="sec-9-img">
+            <img id="sec-9-images1" src="./Icons/sec-9-img.svg" alt="">
+            <img src="./Icons/sec-9-img_1.svg" alt="" class="cloud-icon">
+            <i class='bx bx-question-mark'></i>
+        </div>
+        <div class="sec-9-head-part">
+            <p class="sec-9-heading">
+                <span class="sec-9-title">FAQs</span>
+                <br>Ask us anything!
+            </p>
+            <div class="sec-9-search-butn">
+                <a href="faq.html" class="search-icon">
+                    <i class="bx bx-search"></i>
+                    <input readonly placeholder="Search" class="faq-input">
+                </a>
+            </div>
+        </div>
+        <div class="sec-9-ques-section">
+            <div class="sec-9-blocks">
+                <h4 class="ques-block">How to register in Shehnayi.com?</h4>
+                <p class="answer-block">Registration on Shehnayi.com is Free and easy. You just need to follow the instructions and fill your personal details.</p>
+            </div>
+            <div class="sec-9-blocks">
+                <h4 class="ques-block">How to add profile pictures?</h4>
+                <p class="answer-block">When you fill your details under Registration form, moving further you will get a page to upload your profile picture. There you can upload your pictures.</p>
+            </div>
+            <div class="sec-9-blocks">
+                <h4 class="ques-block">Can we change our profile picture after some time duration?</h4>
+                <p class="answer-block">Yes, you can change your profile picture anytime. </p>
+            </div>
+            <div class="sec-9-blocks">
+                <h4 class="ques-block">How to search for matches? </h4>
+                <p class="answer-block">When you login, your profile page (user panel) will open, and you will be able to see matches on the dashboard itself. </p>
+            </div>
+        </div>
+    </div>  -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="logo-img">
+            <img src="./Icons/logo-icon.svg" alt="">
+        </div>
+        <div class="footer-links">
+            <div class="foot-links-div">
+                <h4 class="links-title">Need Help?</h4>
+                <ul class="foot-links">
+                    <li><a href="#">Member Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Partner Search</a></li>
+                    <li><a href="#">How to use</a></li>
+                    <li><a href="#">Premium membership</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </ul>
+            </div>
+            <div class="foot-links-div">
+                <h4 class="links-title">Company</h4>
+                <ul class="foot-links">
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Shaadi Blogs</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Awards</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="foot-links-div">
+                <h4 class="links-title">Privacy & You</h4>
+                <ul class="foot-links">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Be Safe Online</a></li>
+                    <li><a href="#">Reports Misuse</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-links">
+            <h4 class="social-title">
+                Follow Us
+            </h4>
+            <div class="social-icons">
+                <img src="./Icons/footer-fb-icon.svg" alt="">
+                <img src="./Icons/footer-twitter-icon.svg" alt="">
+                <img src="./Icons/footer-insta-icon.svg" alt="">
+                <img src="./Icons/footer-linkedin-icon.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-end">
+            <h4 class="terms-condtns">Terms and Conditions</h4>
+            <h4 class="privacy-policy">Privacy Policy</h4>
+            <h4 class="contact-us">Contact Us</h4>
+        </div>
+    </div>
+
+    <!-- Script file -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
+    <script src="./home.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- <script src="./faq.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="faq.css" />
+    
+    <!-- Boxicons cdn -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Remixicons cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <div id="mobileview">
+        <i class="ri-close-line">
+        </i>
+        <div id="nav-elements">
+            <a href="index.html">HOME</a>
+            <a href="aboutUs.html">ABOUT US</a> 
+            <a href="membership-plan.html">MEMBERSHIP</a> 
+            <a href="#">LOGIN</a>
+            <a id="mobile-register" href="#">REGISTER</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a id="menu"><i class='bx bx-menu'></i></a>
+        <div class="logo">
+            <a href="#"><img src="./Icons/logo-icon.svg" alt="Sehnayi"></a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="membership-plan.html">Membership</a></li>
+                <li><a id="log" href="#">Login</a></li>
+                <li><a id="reg" class="register-popup">Register</p></li>
+                <li><a href="contact.html">Contact us</a></li>
+                    
+                <div class="profile">
+                    <div class="profile-icon">
+                        <a id="user" href="#"><img src="./Icons/profile-icon.svg" alt=""></a>
+                    </div>
+                </div> 
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pop Up-1 -->
+    <div class="pop-up">
+        <div class="form-div" id="form-1">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Let's set up your Account, while we find Matches for you!</h4>
+            <form id="account-form" action="">
+                <h6>Profile</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Myself</option>
+                </select>
+                <h6>Name</h6>
+                <div id="flex-div">
+                    <input class="name" type="text" placeholder="First Name">
+                    <input class="name" type="text" placeholder="Last Name">
+                </div>
+                <h6>Religious</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Community</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Write about yourself</h6>
+                <textarea id="w3review" name="w3review" rows="4" cols="30" placeholder="write something..."></textarea>
+                <button class="file-upload" onclick="document.getElementById('getFile').click()">Upload photo</button>
+                <input type='file' id="getFile" style="display:none">
+                <div id="btn">
+                    <button id="submit-btn">Submit</button>
+                </div>
+                <h5>Already a Member? <a id="login" href="#">Login</a></h5>
+            </form>
+        </div>
+        <div class="form-div" id="form-2" >
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Great! Now some basic <br> details about you</h4>
+            <form id="account-form" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="text" placeholder="Email Address">
+                <div id="flex-div">
+                  <div id="top">
+                    <h6>Phone No.</h6>
+                    <input class="name" type="text" placeholder="Type">
+                  </div>
+                  <div id="bottom">
+                    <h6>Alternate Phone No.</h6>
+                    <input class="name" type="text" placeholder="Type">
+                  </div>
+                </div>
+                <h6>Date of Birth</h6>
+                <input class="name" id="a" type="text" placeholder="MM/DD/YY">
+                <h6>Living in (Currently)</h6>
+                <input class="name" id="a" type="text" placeholder="Type">
+                <div id="btn-flex">
+                  <a id="form-2-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                  <button id="next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-3">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Thanks for Registering! <br> Now let's build your profile</h4>
+            <form id="account-form" action="">
+                <h6>Home Town</h6>
+                <div id="flex-div">
+                    <select name="City" class="town">
+                        <option value="">City</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                    <select name="City" class="town">
+                        <option value="">State</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                </div>
+                <h6>Marital Status</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Sub Community</h6>
+                <input class="name" type="text" placeholder="Type">
+                <div id="flex-div">
+                    <div id="top">
+                      <h6>Height</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                      <h6>Weight</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>Skin Tone</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-3-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-2">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-4">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Please add Education & <br> Career details</h4>
+            <form id="account-form" action="">
+              <h6>Highest Qualification</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>College</h6>
+              <input class="name" type="text" placeholder="Type">
+              <div id="flex-div">
+                  <div id="top">
+                    <h6>Currently work at</h6>
+                    <input class="name" type="text" placeholder="Type">
+                  </div>
+                  <div id="bottom">
+                    <h6>Designation</h6>
+                    <input class="name" type="text" placeholder="Type">
+                  </div>
+              </div>
+              <h6>Annual Income</h6>
+              <input class="name" type="text" placeholder="Type">
+                <div id="btn-flex">
+                    <a id="form-4-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-3">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-5">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Food & Lifestyle</h4>
+            <form id="account-form" action="">
+              <h6>Eating Habit</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>Drinking Habit</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>Smoking Habit</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+                <div id="btn-flex">
+                    <a id="form-5-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-4">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-6">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Some details about the <br> family</h4>
+            <form id="account-form" action="">
+                <div id="flex-div">
+                    <div id="top">
+                      <h6>Father's Status</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                      <h6>Mother's Status</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>No. of Brothers:</h6>
+                <div id="flex-div">
+                    <div id="top">
+                      <h6>Married</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                      <h6>Unmarried</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>No. of Sisters:</h6>
+                <div id="flex-div">
+                    <div id="top">
+                      <h6>Married</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                    <div id="bottom">
+                      <h6>Unmarried</h6>
+                      <input class="name" type="text" placeholder="Type">
+                    </div>
+                </div>
+                <h6>Family Affluence</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-6-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-5">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-7">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Partner's Basic <br> Information</h4>
+            <form id="account-form" action="">
+                <h6>Age</h6>
+                <div id="flex-div">
+                    <select name="City" class="town">
+                        <option value="">Select</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                    <h6>to</h6>
+                    <select name="City" class="town">
+                        <option value="">Select</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Indore</option>
+                    </select>
+                </div>
+                <h6>Marital Status</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Diet</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Height</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Community</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                </select>
+                <h6>Manglik</h6>
+                <select class="profile" name="profil-for">
+                    <option value="">Select</option>
+                    <option value="">Yes</option>
+                    <option value="">No</option>
+                </select>
+                <div id="btn-flex">
+                    <a id="form-7-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-6">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-8">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Location Priority</h4>
+            <form id="account-form" action="">
+              <h6>City</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>State</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>Country</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+                <div id="btn-flex">
+                    <a id="form-8-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-7">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="form-9">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Location Education & Career</h4>
+            <form id="account-form" action="">
+              <h6>Qualification</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>Education</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+              <h6>Annual Income</h6>
+              <select class="profile" name="profil-for">
+                  <option value="">Select</option>
+              </select>
+                <div id="btn-flex">
+                    <a id="form-9-prev" href="#"><i class="ri-arrow-left-line"></i>Previous</a>
+                    <button id="next-btn-8"><a href="biodata.html">Submit</a></button>
+                </div>
+            </form>
+        </div>
+        <div class="form-div" id="login-form" >
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Login<h4>
+            <form id="login-form-inner" action="">
+                <h6>Email ID</h6>
+                <input class="name" id="email" type="email" placeholder="Email Address">
+                <h6>Password</h6>
+                <input class="name" type="password" placeholder="Password">
+                <button id="next-btn"><a href="#">Submit</a></button>
+                <button id="next-btn"><a href="#">Share</a></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login-pop-up -->
+    <div class="login-pop-up">
+        <div class="form-div">
+            <i id="close-popup" class="ri-close-line"></i>
+            <h4>Login<h4>
+                <form id="login-form-inner" action="">
+                    <h6>Email ID</h6>
+                    <input class="name" id="email" type="email" placeholder="Email Address">
+                    <h6>Password</h6>
+                    <input class="name" type="password" placeholder="Password">
+                    <button id="next-btn"><a href="#">Submit</a></button>
+                    <button id="next-btn"><a href="#">Share</a></button>
+                </form>
+        </div>
+    </div>
+
+
+    <h1 class="page-heading">Frequently Asked Questions</h1>
+    <!-- Accordion -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <!-- 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            1. How to register in Shehnayi.com?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Registration on Shehnayi.com is Free and easy. You just need to
+            follow the instructions and fill your personal details.
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            2. How to add profile pictures?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            When you fill your details under Registration form, moving further
+            you will get a page to upload your profile picture. There you can
+            upload your pictures.
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            3. Can we change our profile picture after some time duration?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Yes, you can change your profile picture anytime.
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            4. How can I login?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            There is a login button at the top red bar on the main website page.
+            By clicking on it you just need to enter your Shehnayi Id and
+            password. And you will be at your user panel dashboard.
+          </div>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFive"
+          >
+            5. How to search for matches?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            When you login, your profile page (user panel) will open, and you
+            will be able to see matches on the dashboard itself.
+          </div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix"
+            aria-expanded="false"
+            aria-controls="flush-collapseSix"
+          >
+            6. Can we register on someone else’s behalf like son/daughter
+            /sibling /friend/relative?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSix"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Yes, of course. You can register anyone. In the registration form
+            you can specify your relationship with the person on whose behalf
+            you are registering a matrimonial account.
+          </div>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSeven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeven"
+            aria-expanded="false"
+            aria-controls="flush-collapseSeven"
+          >
+            7. Are my profile details and photos secure?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSeven"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSeven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Absolutely, your details are safe with us.
+          </div>
+        </div>
+      </div>
+      <!-- 8 -->
+      <!-- <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingEight">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEight"
+            aria-expanded="false"
+            aria-controls="flush-collapseEight"
+          >
+            8. What are the payment options?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseEight"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingEight"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body"></div>
+        </div>
+      </div> -->
+      <!-- 9 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingNine">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseNine"
+            aria-expanded="false"
+            aria-controls="flush-collapseNine"
+          >
+            8. What is the profile validation?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseNine"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingNine"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Once you register with Shehnayi. Your profile will be valid for
+            lifetime.
+          </div>
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTen"
+            aria-expanded="false"
+            aria-controls="flush-collapseTen"
+          >
+            9. After registration, do I get a membership ID?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTen"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Yes, after you register and fill the details in the registration
+            form, you will see your membership Id as SHXXXX.
+          </div>
+        </div>
+      </div>
+      <!-- 11 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingEleven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEleven"
+            aria-expanded="false"
+            aria-controls="flush-collapseEleven"
+          >
+            10. Can we shortlist the profiles?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseEleven"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingEleven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            There is a button named shortlist. If you like anyone you can move
+            that person's profile in the shortlist option by clicking on the
+            button of shortlist.
+          </div>
+        </div>
+      </div>
+      <!-- 12 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwelve">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwelve"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwelve"
+          >
+            11. What are the paid plan details?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwelve"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwelve"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            We have a single basic plan of Rs.500/- only.
+          </div>
+        </div>
+      </div>
+      <!-- 13 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThirteen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThirteen"
+            aria-expanded="false"
+            aria-controls="flush-collapseThirteen"
+          >
+            12. How can I show my interest to the person if I like someone?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThirteen"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThirteen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            You will see a send/receive interest button at the bottom right side
+            of the profile by clicking that you can send/receive interest.
+          </div>
+        </div>
+      </div>
+      <!-- 14 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFourteen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFourteen"
+            aria-expanded="false"
+            aria-controls="flush-collapseFourteen"
+          >
+            13. How do I send a message or contact to the person in whom I am
+            interested or other is interested in me?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFourteen"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFourteen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            You can see a chat bot button available at the bottom right side,
+            you can even initiate the chat with the person you like.
+          </div>
+        </div>
+      </div>
+      <!-- 15 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFifteen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFifteen"
+            aria-expanded="false"
+            aria-controls="flush-collapseFifteen"
+          >
+            14. It's a very lengthy form do I need to fill the entire form?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFifteen"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFifteen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            You should fill the required personal information about yourself, so
+            it will be easy for other person to select you as his/her suited
+            match based on your details.
+          </div>
+        </div>
+      </div>
+      <!-- 16 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSixteen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSixteen"
+            aria-expanded="false"
+            aria-controls="flush-collapseSixteen"
+          >
+            15. What about face-to-face meetings with the person I am interested
+            in?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSixteen"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSixteen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            If you like anyone and you are member of our company, you will get
+            the contact details of that person and can go for video calling for
+            face to face meet.
+          </div>
+        </div>
+      </div>
+      <!-- 17 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSeventeen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeventeen"
+            aria-expanded="false"
+            aria-controls="flush-collapseSeventeen"
+          >
+            16. Can two profiles be registered with the same phone number?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSeventeen"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSeventeen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            No, only one profile can be registered by using one phone number.
+          </div>
+        </div>
+      </div>
+      <!-- 18 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingEighteen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEighteen"
+            aria-expanded="false"
+            aria-controls="flush-collapseEighteen"
+          >
+            17. Can I edit my profiles afterwards?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseEighteen"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingEighteen"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Yes, definitely you can make changes in your profile whenever you
+            want.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="logo-img">
+        <img src="./Icons/logo-icon.svg" alt="" />
+      </div>
+      <div class="footer-links">
+        <div class="foot-links-div">
+          <h4 class="links-title">Need Help?</h4>
+          <ul class="foot-links">
+            <li><a href="#">Member Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Partner Search</a></li>
+            <li><a href="#">How to use</a></li>
+            <li><a href="#">Premium membership</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </ul>
+        </div>
+        <div class="foot-links-div">
+          <h4 class="links-title">Company</h4>
+          <ul class="foot-links">
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Shaadi Blogs</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="foot-links-div">
+          <h4 class="links-title">Privacy & You</h4>
+          <ul class="foot-links">
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Be Safe Online</a></li>
+            <li><a href="#">Reports Misuse</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="social-links">
+        <h4 class="social-title">Follow Us</h4>
+        <div class="social-icons">
+          <img src="./Icons/footer-fb-icon.svg" alt="" />
+          <img src="./Icons/footer-twitter-icon.svg" alt="" />
+          <img src="./Icons/footer-insta-icon.svg" alt="" />
+          <img src="./Icons/footer-linkedin-icon.svg" alt="" />
+        </div>
+      </div>
+      <div class="footer-end">
+        <h4 class="terms-condtns">Terms and Conditions</h4>
+        <h4 class="privacy-policy">Privacy Policy</h4>
+        <h4 class="contact-us">Contact Us</h4>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./faq.js"></script>
+
+  </body>
+</html>
